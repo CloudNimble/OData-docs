@@ -1,59 +1,136 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
-title: OData documentation # < 60 chars
-summary: OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. It enables creation of REST-based services which allow resources identified using Uniform Resource Locators (URLs) and defined in a data model, to be published and edited by Web clients using simple HTTP messages. # < 160 chars
+title: Microsoft's OData Platform documentation
+summary: Learn to use OData on .NET to create APIs that are queryable, cross-platform, and cloud-based. Browse tutorials, sample code, fundamentals, API reference and more.
+brand: aspnet
 
 metadata:
-  title: OData documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: odata #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.topic: landing-page # Required
-  author: madansr7 #Required; your GitHub user alias, with correct capitalization.
-  ms.date: 06/24/2020 #Required; mm/dd/yyyy format.
+  title: Microsoft's OData platform documentation
+  description: Learn to use OData on .NET to create APIs that are queryable, cross-platform, and cloud-based. Browse tutorials, sample code, fundamentals, API reference and more.
+  ms.product: odata
+  ms.topic: hub-page
+  author: madansr7,RobertMcLaws
+  ms.date: 04/11/2021
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: "Create an OData API on ASP.NET Classic"
+      itemType: get-started
+      url: webapi/getting-started.md
+    # Card
+    - title: "Create an OData API on ASP.NET Core"
+      itemType: get-started
+      url: webapi/netcore.md
+    # Card
+    - title: "Create a Restier API on ASP.NET Classic"
+      itemType: get-started
+      url: restier/getting-started.md
+    # Card
+    - title: "OData Overview"
+      itemType: overview
+      url: overview.md
+    # Card
+    - title: "OData Specification"
+      itemType: reference
+      url: https://www.odata.org/documentation
+    # Card
+    - title: "OData API Reference"
+      itemType: reference
+      url: https://docs.microsoft.com/en-us/dotnet/api/overview/odata-dotnet
+    # Card
+    - title: "OData Team Blog"
+      itemType: reference
+      url: https://devblogs.microsoft.com/odata
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: About OData
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is OData?
-            url: /odata/overview
-      - linkListType: video
-        links:
-          - text: Supercharging your Web APIs with OData and ASP.NET Core (19:48)
-            url: https://youtu.be/ZCDWUBOJ5FU
-  
-  # Card (optional)
-  - title: Get started
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Create your first REST API using OData
-            url: /odata/webapi/netcore
-          - text: Get Support
-            url: /odata/resources/support
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Develop OData APIs # < 60 chars (optional)
+  summary: "Build APIs automatically with Restier, or do it yourself with familiar ASP.NET concepts"
+  items:
+    # Card
+    - title: "Automatic APIs with Restier"
+      summary: Build database-driven APIs with Restier automatically, so you can focus on security and scalability.
+      links:
+        - url: restier/index.md
+          itemType: overview
+          text: "Overview"
+        - url: restier/authorization.md
+          itemType: concept
+          text: "Authorizing access to Entity Sets"
+        - url: restier/filters.md
+          itemType: concept
+          text: "Limiting returned data with Query Filters"
+        - url: restier/interceptors.md
+          itemType: concept
+          text: "Adding centralized business logic with Interceptors"
+  # footer (optional)
+  footer: "Contribute to OData docs. Read our [contributor guide](https://github.com/MicrosoftDocs/OData-docs/blob/master/CONTRIBUTING.md)."
 
-  # Card (optional)
-  - title: What's new?
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: What's new?
-            url: /odata/changelog/odatalib-7x
-          - text: OData blogs
-            url: https://devblogs.microsoft.com/odata
-  
-  # Card (optional)
-  - title: Reference
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: OData specification
-            url: https://www.odata.org/
-          - text: OData technical reference
-            url: /dotnet/api/overview/odata-dotnet
+# abstract:
+#   description: OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs.
+#     It enables creation of REST-based services which allow resources identified using Uniform Resource Locators (URLs) and defined in a data model, to be published and edited by Web clients using simple HTTP messages.
+#   aside:
+#     image:
+#       alt: Supercharging your Web APIs with OData and ASP.NET Core
+#       height: 110
+#       src: assets/video-thumb.jpg
+#       width: 250
+#     title: Supercharging your Web APIs with OData and ASP.NET Core (19:48)
+#     href: https://youtu.be/ZCDWUBOJ5FU
+#     width: 250
+# sections:
+# - items:
+#   - type: list
+#     style: cards
+#     className: cardsM
+#     columns: 3
+#     items:
+#     - href: /odata/overview
+#       html: <p>Learn how OData helps create rich REST APIs.</p>
+#       image:
+#         alt: OData overview
+#         src: https://docs.microsoft.com/media/common/i_overview.svg
+#       title: What is OData?
+#     - href: /odata/changelog/odatalib-7x
+#       html: <p>See what's new in OData.</p>
+#       image:
+#         alt: What's new in OData
+#         src: https://docs.microsoft.com/media/common/i_whats-new.svg
+#       title: What's new?
+#     - href: /odata/resources/support
+#       html: <p>Get support for your questions and issues.</p>
+#       image:
+#         alt: Get support for questions and issues
+#         src: https://docs.microsoft.com/media/common/i_support.svg
+#       title: Get support
+#     - href: /odata/webapi/netcore
+#       html: <p>Create your first REST API using OData.</p>
+#       image:
+#         alt: Getting started with OData
+#         src: https://docs.microsoft.com/media/common/i_get-started.svg
+#       title: Get started
+#     - href: https://devblogs.microsoft.com/odata
+#       html: <p>Read the blog to get latest news about new APIs, breaking changes and more.</p>
+#       image:
+#         alt: OData Blogs
+#         src: https://docs.microsoft.com/media/common/i_blog.svg
+#       title: OData blogs
+#     - href: https://www.odata.org
+#       html: <p>Learn more about the OData specification.</p>
+#       image:
+#         alt: OData specification
+#         src: https://docs.microsoft.com/media/common/i_policy.svg
+#       title: OData specification
+#     - href: https://docs.microsoft.com/en-us/dotnet/api/overview/odata-dotnet/odata-dotnet
+#       html: <p>Find technical documentation on OData APIs</p>
+#       image:
+#         alt: OData technical reference documentation
+#         src: https://docs.microsoft.com/media/common/i_reference.svg
+#       title: OData technical reference
+#   - type: paragraph
+#     text: OData helps applications to focus on business logic without worrying about the various API approaches to define request and response headers, status codes, HTTP methods, URL conventions, media types, payload formats, query options, etc. It provides guidance for tracking changes, defining functions/actions for reusable procedures, and sending asynchronous/batch requests.

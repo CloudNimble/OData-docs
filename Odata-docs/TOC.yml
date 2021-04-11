@@ -170,6 +170,12 @@
           href: /odata/webapi/unsupported-type-usage
         - name: Custom OData query options parser
           href: /odata/webapi/custom-query-options-parser
+  - name: Restier for ASP.NET WebAPI
+    items:
+      - name: Introduction
+        href: /odata/restier/index
+      - name: Getting started
+        href: /odata/restier/getting-started
   - name: ASP.NET Core
     items:
     - name: Getting started
